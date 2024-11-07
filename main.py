@@ -6,7 +6,13 @@ from math import sqrt
 def isprime(p):
 
     # votre code ici
-
+premier = True
+s = int(math.sqrt(p))
+for i in range(2,s+1):
+if p%i == 0:
+    premier=False
+    
+return premier
     pass
 
 #### Fonction principale
